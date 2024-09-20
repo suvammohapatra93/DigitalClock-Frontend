@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Suvam's Digital Clock</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1 id="suvam">SUVAM MOHAPATRA</h1>
+    <div class="hero">
+      <div class="container">
+        <div class="clock">
+          <span id="hrs" aria-label="Hours">00</span>
+          <span>:</span>
+          <span id="min" aria-label="Minutes">00</span>
+          <span>:</span>
+          <span id="sec" aria-label="Seconds">00</span>
+          <span id="ampm" aria-label="AM/PM"></span>
+        </div>
+        <div class="controls">
+          <label for="timezone">Choose Timezone:</label>
+          <select id="timezone">
+            <option value="local">Local Time</option>
+            <option value="UTC">UTC</option>
+            <option value="EST">EST</option>
+            <option value="PST">PST</option>
+          </select>
+          <button id="toggle-theme">Toggle Light/Dark Mode</button>
+        </div>
+        <div class="alarm">
+          <label for="alarm-time">Set Alarm:</label>
+          <input type="time" id="alarm-time" />
+          <button id="set-alarm">Set Alarm</button>
+          <p id="alarm-status"></p>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
